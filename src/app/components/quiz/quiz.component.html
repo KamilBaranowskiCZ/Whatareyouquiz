@@ -1,0 +1,79 @@
+<div class="column align-center">
+  <h1 class="page-title">Provide information</h1>
+  <ng-container *ngIf="proccesing; else spinner">
+    <form #form="ngForm" class="quiz-form column align-center">
+      <div class="row align-center">
+        <p class="form-head">Name</p>
+        <mat-form-field appearance="outline" class="form-input">
+          <input
+            [(ngModel)]="name"
+            name="name"
+            matInput
+            placeholder="John Deep"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="row align-center">
+        <p class="form-head">Sex</p>
+        <mat-radio-group
+          [(ngModel)]="sex"
+          name="sex"
+          aria-label="Select an option"
+          class="form-input row"
+        >
+          <mat-radio-button class="main" value="male">Male</mat-radio-button>
+          <mat-radio-button class="main" value="female"
+            >Female</mat-radio-button
+          >
+        </mat-radio-group>
+      </div>
+      <div class="row align-center">
+        <p class="form-head">Age</p>
+        <mat-form-field appearance="outline" class="form-input">
+          <input
+            [(ngModel)]="age"
+            name="age"
+            matInput
+            placeholder="27"
+            type="number"
+            required
+          />
+        </mat-form-field>
+      </div>
+      <div class="row align-center">
+        <p class="form-head">Sport</p>
+        <mat-form-field appearance="outline" class="form-input">
+          <mat-select [(ngModel)]="sports" name="sports">
+            <mat-option value="often">I do sometimes</mat-option>
+            <mat-option value="never">Never</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="row align-center">
+        <p class="form-head">Do you like tea?</p>
+        <mat-slide-toggle
+          [(ngModel)]="doYouLikeTea"
+          name="doYouLikeTea"
+          class="form-input"
+        >
+          Yes, I like tea
+        </mat-slide-toggle>
+      </div>
+      <mat-checkbox [(ngModel)]="rules" name="rules" class="form-checkbox"
+        >Accepted Reg.</mat-checkbox
+      >
+    </form>
+    <button
+      (click)="showResults()"
+      mat-raised-button
+      color="primary"
+      [disabled]="form.invalid || !rules"
+    >
+      Next
+    </button>
+  </ng-container>
+  <ng-template #spinner>
+    <mat-spinner></mat-spinner>
+  </ng-template>
+</div>
