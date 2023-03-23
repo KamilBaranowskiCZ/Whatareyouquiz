@@ -1,0 +1,22 @@
+{
+    "WHAT_ARE_YOU": "Czym jesteś",
+    "CHECK": "Sprawdź!",
+    "PROVIDE_INFORMATION": "Wypełnij formularz",
+    "NAME": "Imię",
+    "SEX": "Płeć",
+    "MALE": "Mężczyzna",
+    "FEMALE": "Kobieta",
+    "AGE": "Wiek",
+    "SPORT": "Sport",
+    "NEVER": "Nigdy",
+    "I_DO_SOMETIMES": "Czasami",
+    "DO_YOU_LIKE_TEA": "Lubisz herbatę?",
+    "YES_I_LIKE_TEA": "Tak lubię herbatę",
+    "ACCEPT_TERMS": "Akceptuje regulamin",
+    "NEXT": "Dalej",
+    "RESULTS": "Wynik",
+    "CONGRATS_DOG": "Gratulacje! Jesteś psem",
+    "CONGRATS_FOX": "Gratulacje! Jesteś lisem!",
+    "CONGRATS_CAT": "Gratulacje! Jesteś kotem!",
+    "RESOLVE_QUIZ_AGAIN": "Rozwiąż quiz ponownie"
+}    

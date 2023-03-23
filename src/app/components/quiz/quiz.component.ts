@@ -8,13 +8,13 @@ import { Route, Router } from '@angular/router';
 })
 export class QuizComponent implements OnInit {
   name = '';
-  sex: 'male' | 'female' = 'male';
+  sex: 'male' | 'female' = 'female';
   age?: number;
   sports: 'often' | 'never' = 'never';
-  doYouLikeTea = true;
+  doYouLikeTea = false;
   rules = false;
   proccesing = true;
-  results?: 'duck' | 'coffe' | 'dog';
+  results?: 'fox' | 'cat' | 'dog';
   constructor(private router: Router) {}
 
   ngOnInit(): void {}
@@ -22,17 +22,34 @@ export class QuizComponent implements OnInit {
   showResults() {
     this.proccesing = false;
 
-    //todo: dodac logike
-
-    this.results = 'duck';
-    switch (this.results) {
-      case 'duck':
-        this.router.navigate(['']);
-        break;
-      // case "coffe":
-      // break;
-      // case "dog":
-      // break;
+    if (this.sex === 'male' && this.sports ===  "often") {
+      this.results = 'dog';
+    } 
+    else if (this.name.length > 5 && this.doYouLikeTea == true) {
+      this.results = 'cat';
     }
+    else{
+      this.results = "fox"
+    }
+
+    switch (this.results) {
+      case 'fox':
+        setTimeout(() => {
+          this.router.navigate(['/fox']);
+        }, 2000);
+
+        break;
+      case 'dog':
+        setTimeout(() => {
+          this.router.navigate(['/dog']);
+        }, 2000);
+        break;
+      case 'cat':
+          setTimeout(() => {
+            this.router.navigate(['/cat']);
+          }, 2000);
+          break;
+    }
+    
   }
 }
