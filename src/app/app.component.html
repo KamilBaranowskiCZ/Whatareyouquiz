@@ -3,7 +3,10 @@
     <router-outlet></router-outlet>
   </div>
   <div class="column">
-    <div class="main">EN</div>
+    <div class="main row">
+      <p class="language-button" (click)="switchToEN()">EN</p>
+      <p class="language-button" (click)="switchToPL()">PL</p>
+    </div>
     <img class="quiz-man" [src]="'quiz-man.svg' | assetsImages" />
   </div>
 </div>

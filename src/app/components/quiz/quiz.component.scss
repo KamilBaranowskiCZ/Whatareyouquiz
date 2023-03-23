@@ -1,3 +1,8 @@
+:host {
+    height: 100%;
+  }
+  
+
 .quiz-form{
     width: 480px;
     .form-head{
@@ -16,3 +21,6 @@
     }
 }
 
+.spinner{
+    margin-top: 160px;
+}

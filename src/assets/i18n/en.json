@@ -1,0 +1,22 @@
+{
+    "WHAT_ARE_YOU": "What are you?",
+    "CHECK": "Check!",
+    "PROVIDE_INFORMATION": "Provide_information",
+    "NAME": "Name",
+    "SEX": "Sex",
+    "MALE": "Male",
+    "FEMALE": "Female",
+    "AGE": "Age",
+    "SPORT": "Sports",
+    "NEVER": "Never",
+    "I_DO_SOMETIMES": "I do sometimes",
+    "DO_YOU_LIKE_TEA": "Do you like tea?",
+    "YES_I_LIKE_TEA": "Yes i like tea",
+    "ACCEPT_TERMS": "Accept terms",
+    "NEXT": "Next",
+    "RESULTS": "Result",
+    "CONGRATS_DOG": "Congratulations! You are a dog!",
+    "CONGRATS_FOX": "Congratulations! You are a fox!",
+    "CONGRATS_CAT": "Congratulations! You are a cat!",
+    "RESOLVE_QUIZ_AGAIN": "Resolve quiz again"
+}    
