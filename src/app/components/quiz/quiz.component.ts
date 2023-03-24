@@ -25,7 +25,7 @@ export class QuizComponent implements OnInit {
     if (this.sex === 'male' && this.sports ===  "often") {
       this.results = 'dog';
     } 
-    else if (this.name.length > 5 && this.doYouLikeTea == true) {
+    else if (this.name.length > 7 && this.doYouLikeTea == true) {
       this.results = 'cat';
     }
     else{
