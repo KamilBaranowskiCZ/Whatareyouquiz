@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor(public translate: TranslateService) {
     translate.addLangs(["en", "pl"]);
-    translate.setDefaultLang("en")
+    translate.use("en")
    }
 
    switchToPL(){
