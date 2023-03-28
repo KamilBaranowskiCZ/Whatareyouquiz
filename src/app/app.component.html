@@ -3,14 +3,14 @@
     <router-outlet></router-outlet>
   </div>
   <div class="column">
-    <div class="main row">
+    <div class="main row language-settings">
       <p class="language-button" 
       [ngClass]="[translate.currentLang == 'en' ? 'selected-language' : 'unselected-language']" 
-      (click)="switchToEN()">EN
+      (click)="switchLanguage('en')">EN
     </p>
       <p class="language-button" 
       [ngClass]="[translate.currentLang == 'pl' ? 'selected-language' : 'unselected-language']" 
-      (click)="switchToPL()">PL
+      (click)="switchLanguage('pl')">PL
     </p>
     </div>
     <img class="quiz-man" [src]="'quiz-man.svg' | assetsImages" />

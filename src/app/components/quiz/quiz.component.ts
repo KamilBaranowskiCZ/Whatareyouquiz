@@ -6,7 +6,7 @@ import { Route, Router } from '@angular/router';
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.scss'],
 })
-export class QuizComponent implements OnInit {
+export class QuizComponent {
   name = '';
   sex: 'male' | 'female' = 'female';
   age?: number;
@@ -15,41 +15,22 @@ export class QuizComponent implements OnInit {
   rules = false;
   proccesing = true;
   results?: 'fox' | 'cat' | 'dog';
-  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
+  constructor(private router: Router) {}
 
   showResults() {
     this.proccesing = false;
 
-    if (this.sex === 'male' && this.sports ===  "often") {
+    if (this.sex === 'male' && this.sports === 'often') {
       this.results = 'dog';
-    } 
-    else if (this.name.length > 7 && this.doYouLikeTea == true) {
+    } else if (this.name.length > 7 && this.doYouLikeTea) {
       this.results = 'cat';
-    }
-    else{
-      this.results = "fox"
+    } else {
+      this.results = 'fox';
     }
 
-    switch (this.results) {
-      case 'fox':
-        setTimeout(() => {
-          this.router.navigate(['/fox']);
-        }, 2000);
-
-        break;
-      case 'dog':
-        setTimeout(() => {
-          this.router.navigate(['/dog']);
-        }, 2000);
-        break;
-      case 'cat':
-          setTimeout(() => {
-            this.router.navigate(['/cat']);
-          }, 2000);
-          break;
-    }
-    
+    setTimeout(() => {
+      this.router.navigate(['/' + this.results]);
+    }, 2000);
   }
 }
