@@ -5,7 +5,7 @@
     <div class="row align-center">
       <h2 class="page-title">{{ 'CONGRATS_CAT' | translate }}</h2>
     </div>
-    <img class="result-img"  src="{{cat?.image_link}}" />
+    <img *ngIf="cat" class="result-img"  src="{{cat?.image_link}}" />
     <button mat-raised-button color="primary" routerLink="">{{ 'RESOLVE_QUIZ_AGAIN' | translate }}</button>
   </div>
   

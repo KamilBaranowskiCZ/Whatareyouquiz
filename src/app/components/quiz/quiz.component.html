@@ -1,33 +1,38 @@
 <div class="column align-center">
-  <h1 class="page-title">{{ 'PROVIDE_INFORMATION' | translate }}</h1>
+  <h1 class="page-title">{{ "PROVIDE_INFORMATION" | translate }}</h1>
   <ng-container *ngIf="proccesing; else spinner">
     <form #form="ngForm" class="quiz-form column align-center">
       <div class="row align-center">
-        <p class="form-head">{{ 'NAME' | translate }}</p>
+        <p class="form-head">{{ "NAME" | translate }}</p>
         <mat-form-field appearance="outline" class="form-input">
           <input
             [(ngModel)]="name"
             name="name"
             matInput
+            appAutoFocus
             placeholder="John Deep"
             required
           />
         </mat-form-field>
       </div>
-      <div class="row align-center">
-        <p class="form-head">{{ 'SEX' | translate }}</p>
+      <div class="row align-center sex-margin-bottom">
+        <p class="form-head no-margin ">{{ "SEX" | translate }}</p>
         <mat-radio-group
           [(ngModel)]="sex"
           name="sex"
           aria-label="Select an option"
           class="form-input row"
         >
-          <mat-radio-button class="main" value="male">{{ 'MALE' | translate }}</mat-radio-button>
-          <mat-radio-button class="main" value="female">{{ 'FEMALE' | translate }}</mat-radio-button>
+          <mat-radio-button class="main" value="male">{{
+            "MALE" | translate
+          }}</mat-radio-button>
+          <mat-radio-button class="main" value="female">{{
+            "FEMALE" | translate
+          }}</mat-radio-button>
         </mat-radio-group>
       </div>
       <div class="row align-center">
-        <p class="form-head">{{ 'AGE' | translate }}</p>
+        <p class="form-head">{{ "AGE" | translate }}</p>
         <mat-form-field appearance="outline" class="form-input">
           <input
             [(ngModel)]="age"
@@ -40,27 +45,29 @@
         </mat-form-field>
       </div>
       <div class="row align-center">
-        <p class="form-head">{{ 'SPORT' | translate }}</p>
+        <p class="form-head">{{ "SPORT" | translate }}</p>
         <mat-form-field appearance="outline" class="form-input">
           <mat-select [(ngModel)]="sports" name="sports">
-            <mat-option value="often">{{ 'I_DO_SOMETIMES' | translate }}</mat-option>
-            <mat-option value="never">{{ 'NEVER' | translate }}</mat-option>
+            <mat-option value="often">{{
+              "I_DO_SOMETIMES" | translate
+            }}</mat-option>
+            <mat-option value="never">{{ "NEVER" | translate }}</mat-option>
           </mat-select>
         </mat-form-field>
       </div>
       <div class="row align-center">
-        <p class="form-head ">{{ 'DO_YOU_LIKE_TEA' | translate }}</p>
+        <p class="form-head no-margin">{{ "DO_YOU_LIKE_TEA" | translate }}</p>
         <mat-slide-toggle
           [(ngModel)]="doYouLikeTea"
           name="doYouLikeTea"
           class="form-input"
         >
-        {{ 'YES_I_LIKE_TEA' | translate }}
+          {{ "YES_I_LIKE_TEA" | translate }}
         </mat-slide-toggle>
       </div>
-      <mat-checkbox [(ngModel)]="rules" name="rules" class="form-checkbox"
-        >{{ 'ACCEPT_TERMS' | translate }}</mat-checkbox
-      >
+      <mat-checkbox [(ngModel)]="rules" name="rules" class="form-checkbox">{{
+        "ACCEPT_TERMS" | translate
+      }}</mat-checkbox>
     </form>
     <button
       (click)="showResults()"
@@ -68,7 +75,7 @@
       color="primary"
       [disabled]="form.invalid || !rules"
     >
-    {{ 'NEXT' | translate }}
+      {{ "NEXT" | translate }}
     </button>
   </ng-container>
   <ng-template #spinner>

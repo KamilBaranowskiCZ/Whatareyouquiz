@@ -23,9 +23,10 @@ import { DogResultComponent } from './components/dog-result/dog-result.component
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { CatResultComponent } from './components/cat-result/cat-result.component';
+import { AutoFocusDirective } from './directives/auto-focus.directive';
 
 @NgModule({
-  declarations: [AppComponent, AssetsImagesPipe, StartComponent, QuizComponent, FoxResultComponent, DogResultComponent, CatResultComponent],
+  declarations: [AppComponent, AssetsImagesPipe, StartComponent, QuizComponent, FoxResultComponent, DogResultComponent, CatResultComponent, AutoFocusDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,

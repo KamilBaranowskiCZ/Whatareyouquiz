@@ -12,12 +12,8 @@ export class AppComponent {
     translate.addLangs(["en", "pl"]);
     translate.use("en")
    }
-
-   switchToPL(){
-    this.translate.use("pl")
-   }
-
-   switchToEN(){
-    this.translate.use("en")
+   
+   switchLanguage(language: string){
+    this.translate.use(language)
    }
 }
