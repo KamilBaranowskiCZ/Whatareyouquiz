@@ -1,28 +1,21 @@
-# Whatareyou
+## 0. This is my angular learning project. This is a funny quiz matching animals to you based on a completed form.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+## 1. Technologies
+* "@angular/core": "^14.2.0",
+* "typescript": "~4.7.2"
 
-## Development server
+## 2. What I learned in this project:
+* Using rest api(observable)
+* Using Angular Forms
+* Writing my own Angular Pipes
+* Creating Angular Components, Services and Routing
+* Creating simple Angular Directives
+* Website translations using Angular i18n
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 3. Screens
 
-## Code scaffolding
+![Welcome Page](./images/welcome.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Form Page](./images/form.png)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# Whatareyouquiz
+![Result Page](./images/result.png)
