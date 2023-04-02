@@ -11,6 +11,7 @@
 * Creating Angular Components, Services and Routing
 * Creating simple Angular Directives
 * Website translations using Angular i18n
+* Using Angular Material Library
 
 ## 3. Screens
 
